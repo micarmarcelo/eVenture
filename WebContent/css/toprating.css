@@ -1,0 +1,91 @@
+
+h5{
+  float: left;
+}
+
+.see-all{
+  font-size: 22px;
+  color: black;
+  margin-top: 10px;
+  float: right;
+}
+
+.see-all:hover{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+.flexslider{
+  background-color: white;
+  height: 310px;
+}
+
+.slides-li{
+  padding: 0;
+  background: #a1887f;
+  color: #e9c77b;
+  height: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.slides-li:active{
+  color: #fff;
+  background: #ede4d5;
+  opacity: 0.5;
+}
+
+.flexslider .slides img.pic-rating{
+  width: 50%;
+  margin: 10px 35px 10px 35px;
+}
+
+.flexslider .slides img.event-icon{
+  width: 300px;
+  height: 300px;
+}
+
+/*Prev and Next Button*/
+.flex-direction-nav a, .flex-direction-nav a:before {
+  width: 40px;
+  height:40px;
+  font-size: 30px;
+}
+
+.pic-rating{
+  width: 100%;
+  height: 80%;
+}
+
+.name-event{
+  font-size: 140%;
+  margin: 0;
+  color: #424242;
+  text-align: center;
+}
+
+.name-event:active{
+  color: #fff;
+}
+
+.total-rating:active{
+  color: #fff;
+}
+
+.total-rating{
+  margin: 0;
+  font-size: 20px;
+  color: #424242;
+  text-align: center;
+}
+
+.square-thumb{
+  width: 300px !important;
+  height: 300px !important;
+}
+
+.nailthumb-container span.nailthumb-title {
+  font-size: 20px !important;
+  height: 25px !important;
+}

@@ -1,0 +1,210 @@
+/** STANDARD FORMAT FOR ALL***/
+body{
+	background-color:#fdffe9;
+	position:static;
+}
+
+.btn{
+	background-color:#836953;
+}
+
+.btn:hover{
+	background-color:#836953;
+}
+
+.btn:focus{
+	background-color:#836953;
+}
+/*
+.input-field label{
+	color:#4eb6ac;
+}
+*/
+.btnhreflike{
+    color: #039be5;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.btnhreflike:focus{
+  background-color:transparent;
+}
+
+.btnhreflike:active{
+  background-color:transparent;
+}
+
+hr.style11 {
+  height: 6px;
+  background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
+
+
+
+/*** ***/
+nav .nav-wrapper
+{
+	background-color:#f2e3c6;
+
+}
+
+nav ul a{
+	color:#444444;
+}
+
+#logotxt{
+	height:65px;
+	margin-left:20%;
+	margin-top:3%;
+}
+
+#categtxt{
+	height:70px;
+}
+
+.slider
+{
+	height: 600px !important;
+}
+
+.slides
+{
+	height: 560px !important;
+}
+
+/** DIVIDER **/
+hr.style18 { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 2px 0 0 0; 
+  border-radius: 20px; 
+} 
+hr.style18:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 2px 0; 
+  border-radius: 20px; 
+}
+
+
+#signup-form{
+   margin: 0 auto;
+   width: 100%;
+ }
+
+#signup-div{
+	width:100%;
+}
+
+#modal_signup{
+	width:30%;
+}
+
+.modal{
+	max-height: 80%;
+	background-color:#fdffe9;
+}
+
+#signup-submit{
+  height:100%;
+  padding:10px;
+  margin-left: 10%;
+}
+
+/** STANDARD FORMAT **/
+input[type=submit]{
+  color: #08708A;
+  border: solid 2px #08708A;
+  width: 80%;
+  opacity: 0.8;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+#login-div{
+  width:100%;
+}
+
+#login-form{
+   margin: 0 auto;
+   width: 100%;
+}
+
+#login-submit{
+  height:100%;
+  padding:10px;
+}
+
+
+.icon .fa-user, .icon .fa-lock{ 
+  color: #08708A;
+}
+
+#username .fa-user, #password .fa-lock{
+  top:15px;
+  left:20px;
+  font-size: 18px;
+  position: absolute;
+}
+
+#login-username, #login-password{
+  color: #08708A;
+  border: solid 1px #08708A;
+  width: 200%;
+  opacity: 0.8;
+  border-radius: 15px;
+  text-indent: 32px;
+  padding-left: 20px; 
+}
+
+#headers{
+  background-color: #f2e3c6;
+}
+
+#modal_login{
+	width:25%;
+}
+#card{
+  position:static;
+}
+.card-image{
+    position: static;
+}
+
+.card .card-image{
+    position: static;
+}
+.card .card-image img{
+	position:static;
+}
+
+.developer{
+	position:static;
+}
+
+.homepage_icon{
+  width:120px;
+  height:120px;
+}
+
+
+footer.page-footer{
+	background-color:#3e2723;
+}
+
+::-webkit-input-placeholder { color: #333333; opacity: 1 !important; }
+:-moz-placeholder { color: #333333;}
+::-moz-placeholder {color: #333333;}
+:-ms-input-placeholder {color: #333333;}
+
+

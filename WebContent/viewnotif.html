@@ -1,0 +1,163 @@
+<html>
+	<head>
+		<title>eVenture</title>
+      	<link href="css/materialplusicons.css" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/homepage.css">
+        <link rel="stylesheet" href="css/eventure.css">
+		<link rel="stylesheet" href="css/viewnotif.css">
+		<link rel="stylesheet" href="css/search.css">
+        <script src="js/plugins/jquery-validation/jquery.validate.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="jquery-3.0.0.min.js"></script>
+	    <script>	
+			$(document).ready(function(){
+				$("button").click(function(){
+					// get id of the clicked event service button
+					var eventID = $(this).attr("id");
+						
+					// set value of hidden input to the id
+					$("#hiddeninput-eventservice").val(eventID);
+						
+					// submit form automatically
+					$("#view-event-service-form").submit();
+					
+				});
+			});
+		</script>
+		<script>
+		$(document).ready(function(){
+			$("a.category").click(function(){
+				// get id of the clicked category button
+				var categoryID = $(this).attr("id");
+					
+				// set value of hidden input to the id
+				$("#hiddeninput-category").val(categoryID);
+					
+				// submit form automatically
+				$("#search-by-category").submit();
+			});
+		});
+		</script>
+	</head>
+
+	<body>
+		<nav>
+          <div class="nav-wrapper">
+            <a href="TopRatingServlet" class="brand-logo left-align">
+                <img src="Photos/eVenture.png" id = "logotxt" alt = "eVenture"/>
+            </a>
+			<form style = "margin-right:20px;">
+            <div style = "float:right;">
+               <div class="container-4" style = "padding-top:20px;">
+                  <input type="search" id="search" placeholder="Search..." />
+                  <button class="dropdown-button icon"><i class="material-icons">search</i></button>
+                </div>
+            </div>
+            <div style = "float:right;padding-top:20px;">
+              <select class="browser-default" style = "color:black;height:2.4rem;">
+                <option value="" disabled selected>Filter Search by</option>
+                <option value="1">People</option>
+                <option value="2">Location</option>
+              </select>
+            </div>
+          </form>		  
+          </div>
+        </nav>
+
+  		<nav>
+		    <div class="nav-wrapper">
+		      <ul id="nav-mobile" class="center hide-on-med-and-down">
+		        <li><a id = "1" class = "category" href="#">Photography & Videography</a></li>
+		        <li><a id = "2" class = "category" href="#">Venue & Catering</a></li>
+		        <li><a id = "3" class = "category" href="#">Fashion Design</a></li>
+		        <li><a id = "4" class = "category" href="#">Make-Up Artist</a></li>
+		         <li><a id = "5" class = "category" href="#">Sounds & Lights</a></li>
+		      </ul>
+		    </div>
+  		</nav>
+
+  		<label for="profile2" class="profile-dropdown">
+                <input type="checkbox" id="profile2">
+                <img src="https://cdn2.iconfinder.com/data/icons/the-world-faces/512/Pretty_Girl_Face_Avatar-512.png">
+                <span><%= session.getAttribute("firstName") %> <%= session.getAttribute("lastName")%></span>
+                <label for="profile2"><i class="mdi mdi-menu"></i></label>
+                <ul>
+                  <li><a href="GetUsersEventServicesServlet"><i class="material-icons">perm_identity</i>My Profile</a></li>
+                  <li><a href="editprofile.jsp"><i class="fa fa-edit small"></i>Edit Profile</a></li>
+                  <li><a href="advertiseevent.jsp"><i class="material-icons">announcement</i>Advertise Event Service</a></li>
+                  <li><a href="viewnotif.html"><i class="fa fa-bell small"></i></i>Notifications</a></li>
+                  <li><a href="LogOutServlet"><i class="material-icons">power_settings_new</i></i>Logout</a></li>
+                </ul>
+        </label>
+
+  		    
+    <!-- PAGE CONTENT -->
+		
+						
+    <div class="section no-pad-bot" id="index-banner">
+      <div id = "container">
+        <div class = "row center">  
+          <div class="col s6 offset-s3">
+                <div class = "col s10 offset-s1 " id="notif-header">
+  					      	<br><img src="Photos/notification.png"/></i>
+  					      	<h5 id="name-notif">Notifications</h5>
+  				  </div>
+						
+				<div class="row">
+      			      		<div class = "col s10 offset-s1" id="notif1">
+      				      		<br>
+      				      		<p>Micaella Marcelo reviewed and rated your <a href="" class="event-link">Courtney Ngo's Photography</a></p>
+      				      		<img class="star-rating" src="Photos/three-stars.png">
+      				      		<br>
+      				      	</div>
+
+      				      	<div class = "col s10 offset-s1" id="notif2">
+      				      		<br>
+      				      		<p>Danica Sevilla rated your <a href="" class="event-link">Courtney Ngo's Photography</a></p>
+      				      		<img class="star-rating" src="Photos/four-stars.png">
+      				      		<br>
+      				      	</div>
+
+      				      	<div class = "col s10 offset-s1" id="notif1">
+      				      		<br>
+      				      		<p>Danica Sevilla left a review on your <a href="" class="event-link">Courtney Ngo's Photography</a></p>
+      				      		
+      				      	</div>
+
+      				      	<div class = "col s10 offset-s1" id="notif2">
+      				      		<br>
+      				      		<p>Denise Silva left a review on your <a href="" class="event-link">Courtney Ngo's Photography</a></p>
+      				      		
+      				      	</div>
+
+      				      	<div class = "col s10 offset-s1" id="notif1">
+      				      		<br>
+      				      		<p>Denise Silva rated on your <a href="" class="event-link">Courtney Ngo's Photography</a></p>
+      				      		<img class="star-rating" src="Photos/three-stars.png">
+      				      	</div>
+
+      				      	<div class = "col s10 offset-s1" id="notif2">
+      				      		<br>
+      				      		<p>Micaella Marcelo left a review on your <a href="" class="event-link">Courtney Ngo's Photography</a></p>
+      				      		
+      				      	</div>
+
+    		      		</div>  
+                
+              
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+	</body>
+
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+
+</html>

@@ -1,0 +1,39 @@
+#notif-header{
+	font-family:"Roboto";
+	background-color: #fdffe9;
+}
+
+#notif1{
+	border-color: #193446;
+	background-color: #b8b8aa;
+	color: #00635a;
+}
+
+#notif2{
+	/*border-style: dotted solid;
+	border-color: #193446;*/
+	background-color: #eaeaea;
+	color: #00635a;
+}
+
+.review{
+	font-family: "Roboto";
+	font-style: italic;
+	color: #00635a;
+}
+
+.event-link{
+	color: #008090;
+}
+
+.event-link:hover{
+	text-decoration: underline;
+}
+
+p{
+	font-size: 18px;
+}
+
+.star-rating{
+	width: 150px; 
+}
